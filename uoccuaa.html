@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p id="kq"></p>
+<script>
+    let a = +prompt('Nhap a')
+    let i = 1;
+    let uoc = []
+    for (i; i <= a; i++ ){
+        if (a % i == 0){
+            uoc.push(i)
+            document.getElementById("kq").innerHTML = uoc
+        }
+    }
+</script>
+</body>
+</html>
