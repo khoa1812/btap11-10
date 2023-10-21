@@ -1,10 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
 </head>
 <body>
-$END$
+<script>
+    let a = +prompt('Nhap a');
+    let b = +prompt('Nhap b');
+    let ar = [];
+    let max = 0;
+    for (i = 1; i <= a; i++ ) {
+        if (a % i == 0 && b % i == 0 ) {
+            ar.push(i);
+        }
+    }
+    for (j = 0; j < ar.length; j++ ) {
+        if (max < ar[j]) {
+            max = ar[j];
+        }
+    }
+    document.write(max)
+
+</script>
 </body>
 </html>

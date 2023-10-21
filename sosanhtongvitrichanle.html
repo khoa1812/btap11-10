@@ -1,10 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
 </head>
 <body>
-$END$
+<script>
+    let arr = [1,2,3,4,5,6,7,8,9];
+    let sum1 = 0;
+    for (let i = 0; i < arr.length; i++) {
+        if (i % 2 === 0 && i !== 0) {
+            sum1 += arr[i];
+        }
+    }
+    let sum2 = 0;
+    for (let i = 0; i < arr.length; i++) {
+        if (i % 2 !== 0) {
+            sum2 += arr[i];
+        }
+    }
+    if (sum1 - sum2 > 0) {
+        alert("Tổng vị trí chẵn lớn hơn tổng vị trí lẻ");
+    }
+    else if (sum1 - sum2 < 0) {
+        alert("Tổng vị trí lẻ lớn hơn tổng vị trí chẵn");
+    }
+    else {
+        alert("Tổng vị trí lẻ và tổng vị trí chẵn bằng nhau")
+    }
+
+</script>
 </body>
 </html>

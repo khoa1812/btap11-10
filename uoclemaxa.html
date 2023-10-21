@@ -6,14 +6,24 @@
 </head>
 <body>
 <script>
-    let a = +prompt('Nhap a')
-    let i = 1;
-    if (a % 2 != 0) {
-        i = a;
-        alert(i)
-    } else {
-        
+    let a = +prompt("Nhap a")
+    let ar = []
+    let max = 0;
+    for (let i = -a; i <= a; i++ ) {
+        if (a % i === 0) {
+            if (i % 2 !== 0) {
+                ar.push(i)
+            }
+        }
     }
+    for (let j = 0; j < ar.length; j++ ){
+        if (max < ar[j]){
+            max = ar[j]
+        }
+    }
+    document.write(max)
+
+
 
 
 </script>

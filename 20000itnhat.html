@@ -1,10 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
 </head>
 <body>
-$END$
+<script>
+    let tinh = [];
+    let x = 0;
+    let y = 0;
+    let z = 0;
+    for (; x < 21; x++) {
+        for (; y < 11; y++) {
+            for (; z < 5; z++) {
+                if (x * 1000 + y * 2000 + z * 5000 === 20000) {
+                    tinh.push({x: x, y: y, z: z});
+                }
+            }
+        }
+    }
+    let min = Infinity;
+    for (j = 0; j < tinh.length; j++) {
+        let sum = tinh[j].x + tinh[j].y + tinh[j].z;
+        if (sum < min) {
+            min = sum;
+        }
+    }
+    document.write(min)
+
+
+
+</script>
 </body>
 </html>
